@@ -1,0 +1,6 @@
+.form-input-container-r{
+    max-height: 50%;
+    overflow-y: scroll;
+    flex-direction: column;
+    gap: 10px;
+}

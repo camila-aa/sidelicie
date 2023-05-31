@@ -1,0 +1,23 @@
+.social-icon{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    background-color: var(--icon-color);
+    box-shadow: 0 4px 4px #0002;
+    padding: 10px 20px;
+    transition: 0.7s;
+}
+
+.social-icon:hover{
+    background-color: var(--main-color);
+    transform: translateY(-15%);
+    color: var(--light);
+}
+
+
+
+
+

@@ -1,0 +1,35 @@
+head{
+    background-color: var(--light);
+    line-height: 40px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    transition: all 0.5s;
+    
+}
+
+.logo img{
+    max-width: 200px;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 4px 4px #d1d1d1;
+    width: 100%;
+    background: white;
+    transition: all 0.5s;
+}
+
+.navigation ul{
+    display: flex; 
+    align-items: center;
+    gap: 1rem;
+}

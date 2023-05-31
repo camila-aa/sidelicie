@@ -1,0 +1,13 @@
+.mobile-text{
+    display: none;
+}
+
+.mobile-text a{
+    color: inherit;
+}
+
+@media (max-width: 768px){
+    .mobile-text{
+        display: block;
+    }
+}

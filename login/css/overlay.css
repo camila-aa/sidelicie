@@ -1,0 +1,27 @@
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 60px;
+    background-color: var(--main-color);
+    transition: 2s;
+}
+
+.overlay p{
+    color: var(--light);
+    font-size: 1.2rem;
+}
+
+.overlay .form-button-light:hover{
+    color: var(--main-color);
+    background-color: var(--light);
+}
+
+.login-container.move .overlay:nth-child(2){
+    opacity: 0;
+}

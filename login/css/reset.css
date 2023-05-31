@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Pathway+Extreme:wght@100&family=Ysabeau:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Pathway Extreme', sans-serif;
+    font-family: 'Ysabeau', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: var(--dark);
+}

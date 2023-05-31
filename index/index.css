@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Pathway+Extreme:wght@100&family=Ysabeau:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Pathway Extreme', sans-serif;
+    font-family: 'Ysabeau', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.background{
+    background: url(fotos/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0.1rem 0.2rem rgb(222, 201, 170);
+    width: 100%;
+    background: white;
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.navigation .logo img{
+    max-width: 200px;
+}
+
+.navigation ul{
+    display: flex; 
+    align-items: center;
+    gap: 1rem;
+}
+
+.navigation ul li a{
+    transition: all 0.5s;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+    background: rgb(222, 201, 170);
+    margin-left: 45px;
+    display: flex;
+    align-content: center;
+    transition: 0.6s ease-in-out;
+}
+
+.navigation ul li a img{
+    transform:scale(0.5);
+    filter: invert(1);
+}
+
+.navigation ul li a:hover{
+    background: rgb(183, 161, 141);
+    width: 40px;
+    height: 40px;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+    
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(183, 161, 141);
+    margin: 5px auto;
+    transition: auto 0.3s;
+}
+
+.nav-menu{
+    transition: 1s;
+}
+
+div .home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+.home p{
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    line-height: 60px;
+    color: rgb(248, 244, 238);
+    text-shadow: 0.5px 0.5px #806e6e;
+}
+
+.home .buttom {
+    border-radius: 25px;
+    background-color: rgb(222, 201, 170);
+    padding: 10px 20px;
+    margin-top: 15px;
+    color: white;
+    transition: 0.2s all linear;
+}
+
+.home a{
+    font-size: 1.5rem;
+    color: inherit;
+    transition: 0.2s all linear;
+}
+
+.home .buttom:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: rgb(183, 161, 141);
+}
+
+@media (max-width:785px){
+    .navigation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        transition: 0.7s;
+    }
+    .menu.ativo .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        transition: 0.7s;
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        border-radius: 0 0 20px 20px; 
+        background-color: white;
+        gap: -10px;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 1.5s;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-menu.ativo{
+        left: 0%;
+        align-items: center;
+        max-width: 100%;
+    }
+    .menu-item{
+        margin: 5px 0px;
+    }    
+}
